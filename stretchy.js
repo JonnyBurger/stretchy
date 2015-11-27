@@ -145,6 +145,9 @@ var _ = self.Stretchy = {
 	$$: $$
 };
 
+// Overwrite the filter immediately from data-filter
+_.selectors.filter = _.script.getAttribute("data-filter") || "*"
+
 // Autosize all elements once the DOM is loaded
 
 // DOM already loaded?
